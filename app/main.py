@@ -6,7 +6,7 @@ app = FastAPI()  # <-- Define app first
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For dev only. Use your frontend's domain in production.
+    allow_origins=["https://sonar-frontend-smoky.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
